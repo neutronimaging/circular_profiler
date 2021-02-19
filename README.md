@@ -16,8 +16,7 @@ angle position, for each of the images loaded.
 
 [Full documentation and step by step tutorial can be found here.](https://neutronimaging.pages.ornl.gov/tutorial/notebooks/circular_profile_of_a_ring/)
 
-Installation Instructions
--------------------------
+# Installation Instructions
 
 We strongly recommend to use conda and create a local environment. To do so, here are the steps
 
@@ -81,16 +80,15 @@ We strongly recommend to use conda and create a local environment. To do so, her
 ## for Windows
 
 
-Meta
-----
+
+# Meta
 
 Jean Bilheux - bilheuxjm@ornl.gov
 
 Distributed under the BSD license. See LICENSE.txt for more information
 
 
-Acknowledgements
-----------------
+# Acknowledgements
 
 This work is sponsored by the Laboratory Directed Research and
 Development Program of Oak Ridge National Laboratory, managed by
