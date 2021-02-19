@@ -23,6 +23,11 @@ We strongly recommend to use conda and create a local environment. To do so, her
 
 * Install [`Anaconda3`](https://www.anaconda.com/products/individual) or [`miniconda3`](https://docs.conda.io/en/latest/miniconda.html).
   > If one of the two is already installed, skip this step.
+
+## for Mac and Linux
+
+* open a terminal window
+
 * Create a virtual environment for this repo, e.g.
   ```bash
   conda create -n circular_profiler python=3.7
@@ -73,6 +78,7 @@ We strongly recommend to use conda and create a local environment. To do so, her
   and you are ready to use the notebooks.
   > NOTE: For most terminals, you can also `Ctrl+click` or `CMD+click` on the link to open it in your default browser. 
 
+## for Windows
 
 
 Meta
