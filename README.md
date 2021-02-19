@@ -7,6 +7,11 @@ ring and integrated over the thickness of the ring, on all the images loaded.
 
 <img src="/static/demo_of_notebook.gif" />
 
+The output will be an ASCII file with the average counts over the thickness of the ring versus the
+angle position, for each of the images loaded.
+
+<img src='/static/preview_of_output.png' />
+
 [Full documentation and step by step tutorial can be found here.](https://neutronimaging.pages.ornl.gov/tutorial/notebooks/circular_profile_of_a_ring/)
 
 
