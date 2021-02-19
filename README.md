@@ -5,6 +5,8 @@ This notebook will allows you to load a set of files (all tiff or fits images fr
 bring a user interface to allow you to define a ring. The circular profile will then be calculated along the
 ring and integrated over the thickness of the ring, on all the images loaded. 
 
+<img src="/static/demo_of_notebook.gif" />
+
 [Full documentation and step by step tutorial can be found here.](https://neutronimaging.pages.ornl.gov/tutorial/notebooks/circular_profile_of_a_ring/)
 
 
