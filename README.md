@@ -25,7 +25,7 @@ We strongly recommend to use conda and create a local environment. To do so, her
   > If one of the two is already installed, skip this step.
 * Create a virtual environment for this repo, e.g.
   ```bash
-  conda create -n circular_profiler python=3
+  conda create -n circular_profiler python=3.7
   ```
 * Activate the virtual environment with
   ```bash
