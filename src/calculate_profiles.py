@@ -91,10 +91,10 @@ class CalculateProfiles:
         mask_ring = np.where((distances_power > inner_radius) & (distances_power < (inner_radius + thickness)))
 
         # find angles of all the pixels
-        angles_matrix = CalculateProfiles._build_angles_matrix(image_width=image_width,
-                                                               image_height=image_height,
-                                                               x_central_pixel=x_central_pixel,
-                                                               y_central_pixel=y_central_pixel)
+        angles_matrix = CalculateProfiles.build_angles_matrix(image_width=image_width,
+                                                              image_height=image_height,
+                                                              x_central_pixel=x_central_pixel,
+                                                              y_central_pixel=y_central_pixel)
         y_mask = mask_ring[0]
         x_mask = mask_ring[1]
 
@@ -109,8 +109,8 @@ class CalculateProfiles:
                 'mask_ring': mask_ring}
 
     @staticmethod
-    def _build_angles_matrix(image_width=None, image_height=None,
-                             x_central_pixel=None, y_central_pixel=None):
+    def build_angles_matrix(image_width=None, image_height=None,
+                            x_central_pixel=None, y_central_pixel=None):
 
         full_angles_matrix = np.zeros((image_height, image_width))
 
