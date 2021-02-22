@@ -23,14 +23,8 @@ This notebook will allows you to load a set of files (all tiff or fits images fr
 bring a user interface to allow you to define a ring. The circular profile will then be calculated along the
 ring and integrated over the thickness of the ring, on all the images loaded.
 
-<img src='../static/preview1.png' />
-<img src='preview1.png' />
-<img src='../static/preview2.png' />
-
 The output will be an ASCII file with the average counts over the thickness of the ring versus the
 angle position, for each of the images loaded.
-
-<img src='../static/preview_of_output.png' />
 
 
 # Acknowledgements
