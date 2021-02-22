@@ -9,7 +9,7 @@ python:
 
 branches:
   only:
-    - master
+    - main
 
 before_install:
   - if [ ${TRAVIS_PYTHON_VERSION:0:1} == "2" ]; then wget http://repo.continuum.io/miniconda/Miniconda-3.5.5-Linux-x86_64.sh -O miniconda.sh; else wget http://repo.continuum.io/miniconda/Miniconda3-3.5.5-Linux-x86_64.sh -O miniconda.sh; fi
@@ -20,7 +20,7 @@ before_install:
 install:
   - conda config --set always_yes true
   - conda update conda
-  - conda create -f environment.yml
+  - conda env create -f environment.yml
   - source activate testenv
   - pip install -U pytest
   - python setup.py install
