@@ -16,7 +16,7 @@ dependencies:
   - icu=68.1
   - idna=2.10
   - intel-openmp=2019.4
-  - jpeg=9d=hbcb3906_0
+  - jpeg=9d
   - krb5=1.17.1
   - libclang=11.0.0
   - libcxx=11.0.0
