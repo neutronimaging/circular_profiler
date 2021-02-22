@@ -20,7 +20,7 @@ before_install:
 install:
   - conda config --set always_yes true
   - conda update conda
-  - conda create -f environment.yml
+  - conda env create -f environment.yml
   - source activate testenv
   - pip install -U pytest
   - python setup.py install
