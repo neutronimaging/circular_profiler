@@ -24,6 +24,7 @@ bring a user interface to allow you to define a ring. The circular profile will 
 ring and integrated over the thickness of the ring, on all the images loaded.
 
 <img src='../static/preview1.png' />
+<img src='preview1.png' />
 <img src='../static/preview2.png' />
 
 The output will be an ASCII file with the average counts over the thickness of the ring versus the
@@ -44,7 +45,3 @@ form of this manuscript, or allow others to do so, for United States
 Government purposes. The Department of Energy will provide public 
 access to these results of federally sponsored research in accordance 
 with the DOE Public Access Plan(http://energy.gov/downloads/doe-public-access-plan).
-
-# References
-
-
