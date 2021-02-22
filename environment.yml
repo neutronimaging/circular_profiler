@@ -48,6 +48,7 @@ dependencies:
   - python
   - python_abi
   - qt
+  - qtpy
   - readline
   - requests
   - ruamel_yaml
@@ -70,6 +71,7 @@ dependencies:
     - neutronbraggedge
     - numpy
     - pandas
+    - pillow
     - plotly
     - python-dateutil
     - pytz
