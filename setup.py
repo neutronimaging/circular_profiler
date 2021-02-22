@@ -20,9 +20,12 @@ KEYWORDS = "neutron imaging processing profile"
 
 # what packages are required for this module to be executed
 REQUIRED = ['numpy',
-           ]
+            'pandas',
+            'matplotlib',
+            ]
 
 here = os.path.abspath('./')
+
 
 class UploadCommand(Command):
     """Support setup.py upload."""
@@ -60,31 +63,31 @@ class UploadCommand(Command):
 
 
 setup(
-    name = NAME,
-    description = DESCRIPTION ,
-    long_description = LONGDESCRIPTION,
-    url = URL,
-    version = VERSION,
-    author = AUTHOR,
-    author_email = EMAIL,
-    packages = find_packages(exclude=['tests']),
-    include_package_data = True,
-    test_suite = 'tests',
-    install_requires = REQUIRED,
-    dependency_links = [
-    ],
-    license = 'BSD',
-    keywords = KEYWORDS,
-    classifiers = ['Development Status :: 3 - Alpha',
-                   'License :: OSI Approved :: BSD License', 
-                   'Topic :: Scientific/Engineering :: Physics',
-                   'Intended Audience :: Developers',
-                   'Programming Language :: Python :: 2.7',
-                   'Programming Language :: Python :: 3.5',
-                   'Programming Language :: Python :: 3.6'],
-    cmdclass={
-        'upload': UploadCommand,
-    },
+        name=NAME,
+        description=DESCRIPTION,
+        long_description=LONGDESCRIPTION,
+        url=URL,
+        version=VERSION,
+        author=AUTHOR,
+        author_email=EMAIL,
+        packages=find_packages(exclude=['tests']),
+        include_package_data=True,
+        test_suite='tests',
+        install_requires=REQUIRED,
+        dependency_links=[
+        ],
+        license='BSD',
+        keywords=KEYWORDS,
+        classifiers=['Development Status :: 3 - Alpha',
+                     'License :: OSI Approved :: BSD License',
+                     'Topic :: Scientific/Engineering :: Physics',
+                     'Intended Audience :: Developers',
+                     'Programming Language :: Python :: 2.7',
+                     'Programming Language :: Python :: 3.5',
+                     'Programming Language :: Python :: 3.6'],
+        cmdclass={
+            'upload': UploadCommand,
+        },
 )
 
 # End of file
