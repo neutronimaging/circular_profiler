@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/neutronimaging/circular_profiler.svg?branch=main)](https://travis-ci.com/neutronimaging/circular_profiler)
+
 Abstract
 --------
 
