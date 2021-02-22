@@ -71,6 +71,7 @@ dependencies:
     - neutronbraggedge
     - numpy
     - pandas
+    - pillow
     - plotly
     - python-dateutil
     - pytz
