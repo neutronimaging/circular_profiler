@@ -4,7 +4,7 @@
 
 When reporting issues please include as much detail as possible about your
 operating system, **circular_profiler** version and python version. Whenever possible, please
-also include a brief, self-contained code example that demonstrates the problem.
+also add a screenshot of the error message and again, if possible, some of the input data set that lead to the error.
 
 ## Contributing code
 
