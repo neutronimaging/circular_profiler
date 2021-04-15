@@ -16,6 +16,10 @@ bibliography: paper.bib
 
 # Summary
 
+Some experiments require the researchers to compare the profile over a ring, of various thicknesses, as conditions of the sample change. This code can also
+be applied to a static 3D volume to compare the symmetry of all the slices. In one of our experiment, a large nuclear reactor cell was measured in order to 
+investigate the potential defects of some of the elements. Slight misalignement of the elements can lead to an over heating of the reactor. The code was used
+to calculate the profile of each 3D slice over the entire volume and to compare their symmetry. 
 
 # Statement of need
 
