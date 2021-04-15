@@ -10,12 +10,14 @@ authors:
 affiliations:
  - name: Oak Ridge National Laboratory
    index: 1
-   
 date: 15 April 2021
 bibliography: paper.bib
 ---
 
 # Summary
+
+
+# Statement of need
 
 Notebook/UI to perform circular profiles in the shape of a ring over a stack of images
 
@@ -25,7 +27,6 @@ calculation is performed for all the images loaded.
 
 The output is an ASCII file with the average counts over the thickness of the ring versus the
 angle position, for each of the images loaded.
-
 
 # Acknowledgements
 This work is sponsored by the Laboratory Directed Research and
