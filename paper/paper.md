@@ -19,11 +19,11 @@ bibliography: paper.bib
 
 Notebook/UI to perform circular profiles in the shape of a ring over a stack of images
 
-This notebook will allows you to load a set of files (all tiff or fits images from a given folder) and will
-bring a user interface to allow you to define a ring. The circular profile will then be calculated along the
-ring and integrated over the thickness of the ring, on all the images loaded.
+This notebook allows to load a set of files (all tiff or fits images from a given folder) and brings a user interface, used to define 
+the position and size of a ring. The circular profile of that rings is calculated and integrated over the thickness of the ring. This
+calculation is performed for all the images loaded.
 
-The output will be an ASCII file with the average counts over the thickness of the ring versus the
+The output is an ASCII file with the average counts over the thickness of the ring versus the
 angle position, for each of the images loaded.
 
 
