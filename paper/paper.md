@@ -16,21 +16,26 @@ bibliography: paper.bib
 
 # Summary
 
-Some experiments require the researchers to compare the profile over a ring, of various thicknesses, as conditions of the sample change. This code can also
-be applied to a static 3D volume to compare the symmetry of all the slices. In one of our experiment, a large nuclear reactor cell was measured in order to 
-investigate the potential defects of some of the elements. Slight misalignement of the elements can lead to an over heating of the reactor. The code was used
-to calculate the profile of each 3D slice over the entire volume and to compare their symmetry. 
-
-# Statement of need
-
 Notebook/UI to perform circular profiles in the shape of a ring over a stack of images
 
-This notebook allows to load a set of files (all tiff or fits images from a given folder) and brings a user interface, used to define 
-the position and size of a ring. The circular profile of that rings is calculated and integrated over the thickness of the ring. This
-calculation is performed for all the images loaded.
+This notebook loads a set of files (all tiff or fits images from a given folder). An interface allows the
+users to define the position and the size of a ring. Then the circular profile of that rings is calculated and 
+integrated over the thickness of the ring. This calculation is repeated over the entire stack of images.
 
 The output is an ASCII file with the average counts over the thickness of the ring versus the
 angle position, for each of the images loaded.
+
+# Statement of need
+
+X-ray and neutron community work with TIFF or FITS data files. In some experiment, users need to get a computed
+tomography (CT) measurement of their sample. 3D volume of the sample is reconstructed via the use of various
+algorithms and software. The analysis of such large volume of data is very time-consuming if done manually. In some
+cases the symmetry of the sample allows to automate the analysis and visualization of each slice of the reconstructed
+data. For example, the High Flux Isotope Reactor (HFIR) at Oak Ridge National Laboratory (ORNL) uses nuclear cell to 
+produce the neutron dedicated to research. Over-heated behavior of the reactor lead to a shutdown of the reactor for
+one year. Issues were found to be coming from the welding of the cells. CT of those cells did not shown any obvious 
+defects but the visualization of the entire stack of images was done manually. The notebook presented here permitted
+to automate the comparisons of each layers and clearly highlight the defects of some of the cells.
 
 # Acknowledgements
 This work is sponsored by the Laboratory Directed Research and
