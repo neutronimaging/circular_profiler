@@ -3,6 +3,9 @@
 # update base conda
 conda update -y -n base -c defaults conda
 
+# nodejs
+conda install -c conda-forge nodejs=15.14.0
+
 # install dependencies from main channel
 conda install -y      \
     numpy             \
@@ -12,7 +15,6 @@ conda install -y      \
     matplotlib        \
     jupyter           \
     jupyterlab        \
-    nodejs            \
     qtpy              \
     pyqtgraph         \
     astropy
