@@ -77,6 +77,20 @@ We strongly recommend to use conda and create a local environment. To do so, her
   and you are ready to use the notebooks.
   > NOTE: For most terminals, you can also `Ctrl+click` or `CMD+click` on the link to open it in your default browser. 
 
+# Unit Tests
+
+To run the unit tests, first installed the library
+
+```buildoutcfg
+pip install .
+```
+
+and then run the tests using **pytest**
+
+```buildoutcfg
+pytest
+```
+
 # Demonstration
 
 ## Demo data used
