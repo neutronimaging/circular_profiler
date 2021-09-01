@@ -42,13 +42,13 @@ We strongly recommend to use conda and create a local environment. To do so, her
 
 * Inside the repository, you should be able to find a bash script, `config_conda_env.sh`.  Use it to install required packages with
   ```bash
-  bash config_conda_env.sh
+  ./config_conda_env.sh
   ```
   > NOTE: technically you can run this script in any environment, but it is __highly recommended__ to run it in a virual environment.
 
 * Fire up your terminal, go to the root of this repo, and start the Jupyter notebook server with
   ```bash
-  jupyter notebook
+  ./launch_notebook.sh
   ```
   You will see something similar to the following
   ```bash
@@ -76,6 +76,58 @@ We strongly recommend to use conda and create a local environment. To do so, her
   ```
   and you are ready to use the notebooks.
   > NOTE: For most terminals, you can also `Ctrl+click` or `CMD+click` on the link to open it in your default browser. 
+
+# Demonstration
+
+## Demo data used
+
+To illustrate how to use this notebook, we are going to load some fake data from the *test/data/demo* folder.
+The fake data are reconstructed, horizontal slices, images of a commercial airplane engine showing the front 
+part of the engine where the blades can be found. The **red arrow** shows the location of the 4 slices used here.
+
+<img src='/static/engine_view.png' />
+
+## First step into the notebook
+
+After starting the notebook, you see a first widget **Do not know how to run this notebook? Click Me!** that
+will take you to another web page with a detail step by step instruction on how to use this notebook. This
+web page will also detail the math behind the various calculations used.
+
+The second widget list the **Notebook rules** in case you are not familiar with the **Jupyter notebooks**. Those
+are self-explanatory.
+
+## Setup notebook
+
+Run, (SHIFT + ENTER or click the Run button at the top of the notebook), the cell below **Setup notebook** to 
+import the necesary librairies.
+The next cell is necessary to be able to bring the user interface to life later on.
+
+## Select folder containing data
+
+Run this cell to select the folder containing the data to use. Detail tutorial of how to use the file
+dialog can be found [here](https://neutronimaging.pages.ornl.gov/tutorial/notebooks/file_selector).
+By default the file selector takes you from the tests/demo folder. Simply click **Select** to load the folder.
+
+<img src='/static/select_data.png' />
+
+## Launch User Interface
+
+A user interface (UI) will show up, check behind the browser as sometimes the UI stays
+behind the current active window.
+
+<img src='/static/user_interface_with_demo_data.png' />
+
+A detail tutorial of the UI can be found 
+[here](https://neutronimaging.pages.ornl.gov/tutorial/notebooks/circular_profile_of_a_ring/), 
+but for the sake of this demo, define a ring center with the cells and having a 
+thickness roughly below the lenght of the cells (see next animation).
+
+<img src='/static/selection_of_rings.gif' />
+
+
+
+
+
 
 # Meta
 

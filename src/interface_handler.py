@@ -1,3 +1,6 @@
+import warnings
+warnings.filterwarnings('ignore')
+
 import os
 from qtpy.QtWidgets import QMainWindow, QVBoxLayout, QProgressBar, QApplication
 import pyqtgraph as pg
