@@ -205,7 +205,7 @@ class Interface(QMainWindow):
 
         # ring settings
         max_ring_value = self.width
-        default_inner_ring_value = np.int(self.width/4)
+        default_inner_ring_value = int(self.width/4)
         default_ring_thickness = 100
         self.ui.ring_inner_radius_slider.setMaximum(max_ring_value*100)  # *100 because slider is int
         self.ui.ring_inner_radius_slider.setValue(default_inner_ring_value*100)
@@ -243,10 +243,10 @@ class Interface(QMainWindow):
         y0 = 0
 
         nbr_height_bins = np.float(height) / np.float(bin_size)
-        real_height = y0 + np.int(nbr_height_bins) * np.int(bin_size)
+        real_height = y0 + int(nbr_height_bins) * int(bin_size)
 
         nbr_width_bins = np.float(width) / np.float(bin_size)
-        read_width = x0 + np.int(nbr_width_bins) * np.int(bin_size)
+        read_width = x0 + int(nbr_width_bins) * int(bin_size)
 
         # pos (each matrix is one side of the lines)
         pos = []
@@ -399,7 +399,7 @@ class Interface(QMainWindow):
         y0 = region[0][1].start
         y1 = region[0][1].stop
 
-        ring_radius = np.int(x1 - x0)/2
+        ring_radius = int(x1 - x0)/2
 
         self.ui.ring_inner_radius_doubleSpinBox.setValue(ring_radius)
         self.ui.ring_inner_radius_slider.setValue(100*ring_radius)
@@ -481,7 +481,7 @@ class Interface(QMainWindow):
         x1 = region[0][0].stop
         y0 = region[0][1].start
         y1 = region[0][1].stop
-        outer_radius = np.int(x1 - x0) / 2
+        outer_radius = int(x1 - x0) / 2
 
         if x0 <= 0:
             self.replot_outer_ring(x0=x0, y0=y0, x1=x1, y1=y1)
@@ -500,7 +500,7 @@ class Interface(QMainWindow):
         #                                            self.ui.image_view.imageItem)
         # x0 = region[0][0].start
         # x1 = region[0][0].stop
-        # inner_radius = np.int(x1 - x0) / 2
+        # inner_radius = int(x1 - x0) / 2
         inner_radius = self.ui.ring_inner_radius_doubleSpinBox.value()
 
         # thickness = np.abs(inner_radius - outer_radius)
@@ -558,14 +558,14 @@ class Interface(QMainWindow):
         x1 = region[0][0].stop
         # y0 = region[0][1].start
         # y1 = region[0][1].end
-        radius_1 = np.int(x1 - x0)/2
+        radius_1 = int(x1 - x0)/2
 
         # outer ring
         region = self.outer_ring_roi.getArraySlice(self.current_live_image,
                                                    self.ui.image_view.imageItem)
         x0 = region[0][0].start
         x1 = region[0][0].stop
-        radius_2 = np.int(x1 - x0)/2
+        radius_2 = int(x1 - x0)/2
 
         radius_inner = np.min([radius_1, radius_2])
         radius_outer = np.max([radius_1, radius_2])
@@ -675,7 +675,7 @@ class Interface(QMainWindow):
         self.display_mode_changed()
 
     def ring_settings_thickness_double_spin_box_changed(self, spin_box_value):
-        self.ui.ring_thickness_slider.setValue(np.int(spin_box_value*100))
+        self.ui.ring_thickness_slider.setValue(int(spin_box_value*100))
         self.display_ring()
 
     def ring_settings_thickness_double_spin_box_finished(self):
@@ -689,7 +689,7 @@ class Interface(QMainWindow):
         self.display_mode_changed()
 
     def ring_settings_inner_radius_double_spin_box_changed(self, spin_box_value):
-        self.ui.ring_inner_radius_slider.setValue(np.int(spin_box_value*100))
+        self.ui.ring_inner_radius_slider.setValue(int(spin_box_value*100))
         self.display_ring()
 
     def ring_settings_inner_radius_double_spin_box_finished(self):
