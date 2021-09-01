@@ -79,9 +79,10 @@ We strongly recommend to use conda and create a local environment. To do so, her
 
 # Unit Tests
 
-To run the unit tests, first installed the library
+To run the unit tests, first install the library
 
 ```buildoutcfg
+cd ~/git/circular_profile     # replace by your path to the installation folder
 pip install .
 ```
 
