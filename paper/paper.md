@@ -27,15 +27,11 @@ angle position, for each of the images loaded.
 
 # Statement of need
 
-X-ray and neutron community work with TIFF or FITS data files. In some experiment, users need to get a computed
-tomography (CT) measurement of their sample. 3D volume of the sample is reconstructed via the use of various
-algorithms and software. The analysis of such large volume of data is very time-consuming if done manually. In some
-cases the symmetry of the sample allows to automate the analysis and visualization of each slice of the reconstructed
-data. For example, the High Flux Isotope Reactor (HFIR) at Oak Ridge National Laboratory (ORNL) uses nuclear cell to 
-produce the neutron dedicated to research. Over-heated behavior of the reactor lead to a shutdown of the reactor for
-one year. Issues were found to be coming from the welding of the cells. CT of those cells did not shown any obvious 
-defects but the visualization of the entire stack of images was done manually. The notebook presented here permitted
-to automate the comparisons of each layers and clearly highlight the defects of some of the cells.
+This software aims at finding cylindrical symmetry discrepancies. For example a commercial airplane engine is
+composed of many layers of blades. Each layer must be perfectly symmetrical around its center. A blade slightly 
+bent and then a little bit closer than expected to its neighbor can be dramatic to the durability of the engine. 
+This software quickly calculate the circular profile to help isolate those issues. The demo data shown in the README
+illustrate such a problem and the necessity of this tool.
 
 # Acknowledgements
 This work is sponsored by the Laboratory Directed Research and

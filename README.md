@@ -153,6 +153,15 @@ a stack of images can take hours or days.
 
 <img src='/static/calculate_profiles.gif' />
 
+# Community guidelines
+
+- Contribute to the software: 
+  Do not hesitate to contribute to the project by creating a fork of the project
+  and then a Pull Request. 
+- Report issues or problems with the software:
+ Please create an issue for any bug found or feature requested
+- Seek support: None right now
+
 # Meta
 
 Jean Bilheux - bilheuxjm@ornl.gov
