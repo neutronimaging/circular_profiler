@@ -117,6 +117,8 @@ behind the current active window.
 
 <img src='/static/user_interface_with_demo_data.png' />
 
+### Selection of rings
+
 A detail tutorial of the UI can be found 
 [here](https://neutronimaging.pages.ornl.gov/tutorial/notebooks/circular_profile_of_a_ring/), 
 but for the sake of this demo, define a ring center with the cells and having a 
@@ -124,10 +126,17 @@ thickness roughly below the lenght of the cells (see next animation).
 
 <img src='/static/selection_of_rings.gif' />
 
+### Calculation of rings profiles
 
+Click the **Calculate Profiles** button to calculate the circular profile of the ring
+you just defined. The right part of the UI will expand and will allow you to select the
+profile of any of the images loaded. One can then quickly find out that one of the 
+blade on image 3 is out of position. Of course this was obvious by just visualizing
+the images loaded, but for some cases such as reactor blades, thousands of slices are 
+acquired when each slice contains hundreds of blades. Manual visualization of such
+a stack of images can take hours or days.
 
-
-
+<img src='/static/calculate_profiles.gif' />
 
 # Meta
 
