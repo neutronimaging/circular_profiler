@@ -32,5 +32,5 @@ pip install \
 
 # build Jupyter lab
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
-jupyter nbextension enable --py widgetsnbextension
 jupyter lab build
+jupyter nbextension enable --py widgetsnbextension
